@@ -1,0 +1,331 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #062644;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.sticky + .full-width {
+    padding-top: 80px;
+}
+
+.navbar {
+    width: calc(100vw - 180px);
+    height: 80px;
+    background-color: white;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+}
+
+.navbar.sticky {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 9px 20px, rgba(0, 0, 0, 0.1) 0px 0px 1px;
+}
+
+.nav-link {
+    color: #000;
+    opacity: 0.6;
+    text-decoration: none;
+    margin-left: 45px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav-link.active {
+    opacity: 1;
+    background: none;
+}
+
+.nav-link:hover {
+
+}
+
+.navbar.transparent-navbar {
+    background-color: transparent;
+}
+
+.navbar.transparent-navbar.default-fixed {
+    box-shadow: none;
+    position: fixed;
+    top: 60px;
+}
+
+
+.navbar.transparent-navbar .navbar-links .nav-link {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.navbar.transparent-navbar .navbar-links .nav-link:hover {
+    opacity: 1;
+}
+
+.full-width {
+    display: flex;
+    overflow: hidden;
+}
+
+.left-content {
+    width: 40%;
+    height: 100vh;
+}
+
+.left-content-scrollbox {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    overflow: scroll;
+}
+
+.left-content-inner {
+    padding: 50px 90px;
+}
+
+.right-content {
+    width: 60%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.right-content-inner {
+}
+
+.hero-image-container {
+}
+
+.hero-image-full {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title.hero {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 55px;
+    margin: 20px 0 30px 0;
+    color: #1366B2;
+}
+
+.cover {
+    object-fit: cover;
+}
+
+#app-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-icon {
+    margin-right: 20px;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.app:hover, .active {
+    background: #D0E6FB;
+    transition: all 0.2s ease;
+}
+
+.app a {
+    color: #9BA8B4;
+    transition: all 0.2s ease;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.app.active a {
+    color: #1366B2;
+    transition: all 0.2s ease;
+}
+
+.content {
+    opacity: 0;
+    visibility: hidden;
+    background-size: cover;
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content.selected {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.content h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.content span {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 140%;
+    width: 235px;
+}
+
+.screenshot {
+    margin-top: 60px;
+}
+
+.download-buttons-container {
+    flex-direction: column !important;
+    margin-top: 4vh !important;
+}
+
+.download-buttons-container a {
+    z-index: 1;
+    text-decoration: none;
+}
+
+.download-button {
+    width: 235px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.download-button.web {
+    background-color: #1366B2;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.download-button.web:hover {
+    filter: brightness(90%);
+    transition: all 0.2s ease;
+}
+
+.download-button.web span {
+    width: auto;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.download-button.app-store, .download-button.play-store {
+    background-color: #000000;
+}
+
+.app-store-img, .play-store-img {
+    width: 150px;
+}
+
+.footer-links {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+}
+
+.social-link {
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.social-link:hover {
+    opacity: .9;
+}
+
+.social-link:not(:last-child) {
+    margin-right: 8px;
+}
+
+.banner {
+    display: none;
+    z-index: 101;
+    width: 100vw;
+    background: #f7f7f7;
+    position: absolute;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 103;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-banner {
+    flex: 100%;
+}
+
+.close-banner:hover {
+    opacity: 0.6;
+}
+
+.banner-content span {
+    clear: both;
+    color: #222;
+    font-size: 18px;
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.banner-content span a {
+    color: #1A6BB5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* @media screen and (max-width: 1263px) {
+    .title.hero {
+        font-size: 4vw;
+        line-height: 4.5vw;
+    } */
+}
+
+
