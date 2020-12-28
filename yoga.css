@@ -6,13 +6,13 @@ body,html{
 
 .container{
     position: relative;
-    text-align: center;
+    text-align: left;
     color: white;
 }
 
 .text-block {
     position: absolute;
-    top: 8px;
+    top: 120px;
     left: 16px;
     color: black;
     padding-left: 20px;
@@ -97,5 +97,53 @@ body,html{
   .button:active {
     background-color: #4e3cf5;
     box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    transform: translateY(4px); 
+  }
+
+  .navigation {
+    background-color: #44318D;
+    padding: 2rem 2rem;
+    color: #292524;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .footer {
+    background-color:#44318D;
+    padding: 2rem 1rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    color: white;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 0%;
+    margin-right: 0%;
+    position: absolute;
+    /* bottom: 8px;
+    right: -3px; */
+    top: 180%;
+    width: 100%;
+    height: 3rem;    
+  }
+
+  .footer .footer-header {
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .list-no-bullet{
+    list-style: none;
+  }
+
+  .list-for-itemInline {
+    display: inline;
+    padding: 0rem 0.5rem;
+  }
+
+  .footer .sm{
+    color: white;
+    text-decoration: none;
+  }
+  .link{
+    text-decoration: none;
   }
