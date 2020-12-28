@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap');
+
+
+body,html{
+  font-family: 'Fira Sans', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.navigation {
+  background-color: #FB923C;
+  padding: 2rem 2rem;
+  color: #292524;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.container1{
+    margin: auto;
+    /* background-image: url("https://media.giphy.com/media/bmxPyUwvWvCne/giphy.gif"); */
+    /* background-image-margin: auto; */
+    /* background-image-width: 600px; */
+
+    position: relative;
+  text-align: center;
+  color: black;
+
+    /* Center and scale the image nicely */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* padding: 0rem 0rem; */
+    
+}
+
+.container1 .info {
+  text-align: center;
+  padding: 0.5rem 5rem;
+  font-size: 1.5rem;
+  color : black;
+  /* background-color: #292524; */
+  
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+    
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0rem 2rem;
+    padding: 4rem 0rem;
+    margin-left: 7%;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    top: 100%;
+
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #FB923C;
+    border-radius: 0.5rem;
+    color: white;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .footer {
+    background-color: #FB923C;
+    padding: 2rem 1rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    color: white;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 0%;
+    margin-right: 0%;
+    position: absolute;
+    /* bottom: 8px;
+    right: -3px; */
+    top: 180%;
+    width: 100%;
+    height: 3rem;    
+  }
+
+  .footer .footer-header {
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .list-no-bullet{
+    list-style: none;
+  }
+
+  .list-for-itemInline {
+    display: inline;
+    padding: 0rem 0.5rem;
+  }
+
+  .footer .sm{
+    color: white;
+  }
+
+  .container-head {
+    position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 1rem;
+  }
+
+.card-image{
+  vertical-align: middle;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.button {
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 1rem;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 1
+}
