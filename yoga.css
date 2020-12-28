@@ -50,7 +50,6 @@ body,html{
         top:100%;
     }
   
-  /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
@@ -76,3 +75,27 @@ body,html{
     border-radius: 1rem;
   }
   
+
+  /* Button -style */
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #44318D;
+    border: none;
+    border-radius: 15px;
+    border-color: white;
+  }
+  
+  .button:hover {background-color: #3659cc}
+  
+  .button:active {
+    background-color: #4e3cf5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }

@@ -326,6 +326,14 @@ button {
         font-size: 4vw;
         line-height: 4.5vw;
     } */
-}
 
 
+
+@media only screen and (max-width: 600px) {
+    .left-content {
+        width: 100%;
+    }
+    .right-content{
+        width: 100%;
+    }
+  }

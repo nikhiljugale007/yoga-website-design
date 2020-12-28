@@ -74,4 +74,25 @@ body,html{
     background-color: #93C5FD;
     border-radius: 1rem;
   }
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4a5cff;
+    border: none;
+    border-radius: 15px;
+    border-color: white;
+  }
   
+  .button:hover {background-color: #3659cc}
+  
+  .button:active {
+    background-color: #2515b4;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
