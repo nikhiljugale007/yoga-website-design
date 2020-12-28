@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap');
+
 body,html{
+    font-family: 'Fira Sans', sans-serif;
     height: 100%;
     margin: 0;
     background-image: "./yoga-bg1.jpg";
 }
 
-.container{
+.container1{
     position: relative;
     text-align: left;
     color: white;
@@ -12,7 +15,7 @@ body,html{
 
 .text-block {
     position: absolute;
-    top: 120px;
+    top: 0px;
     left: 16px;
     color: black;
     padding-left: 20px;
@@ -110,7 +113,7 @@ body,html{
     padding: 2rem 1rem;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    color: white;
+    color: black;
     text-align: center;
     font-size: large;
     margin-bottom: 0%;
@@ -118,7 +121,7 @@ body,html{
     position: absolute;
     /* bottom: 8px;
     right: -3px; */
-    top: 180%;
+    top: 200%;
     width: 100%;
     height: 3rem;    
   }
@@ -138,9 +141,10 @@ body,html{
   }
 
   .footer .sm{
-    color: white;
+    color: black;
     text-decoration: none;
   }
   .link{
+    color:black;
     text-decoration: none;
   }
