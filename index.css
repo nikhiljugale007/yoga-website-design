@@ -323,11 +323,12 @@ button {
     text-decoration: none;
 }
 
-/* @media screen and (max-width: 1263px) {
+@media screen and (max-width: 1263px) {
     .title.hero {
         font-size: 4vw;
         line-height: 4.5vw;
-    } */
+        background-color:blue;
+    }
 
 
 
