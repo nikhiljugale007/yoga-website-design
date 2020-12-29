@@ -14,6 +14,7 @@ button {
     font-family: 'Montserrat', sans-serif;
 }
 
+
 .header {
     padding: 10px 16px;
     background: #555;
@@ -323,20 +324,4 @@ button {
     text-decoration: none;
 }
 
-@media screen and (max-width: 1263px) {
-    .title.hero {
-        font-size: 4vw;
-        line-height: 4.5vw;
-        background-color:blue;
-    }
 
-
-
-@media only screen and (max-width: 600px) {
-    .left-content {
-        width: 100%;
-    }
-    .right-content{
-        width: 100%;
-    }
-  }
